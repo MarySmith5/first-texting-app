@@ -11,7 +11,7 @@ client = Client(account_sid, auth_token)
 
 message = client.messages \
                 .create(
-                     body="Join Earth's mightiest heroes.",
+                     body="Hi, Mary! I'm so proud of you for learning to use Twilio!!!",
                      from_=os.environ['TWILIO_NUMBER'],
                      to='+17192142929'
                  )
