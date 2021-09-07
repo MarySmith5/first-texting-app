@@ -12,6 +12,7 @@ client = Client(account_sid, auth_token)
 message = client.messages \
                 .create(
                      body="Hi, Mary! I'm so proud of you for learning to use Twilio!!!",
+                     media_url=['https://demo.twilio.com/owl.png'],
                      from_=os.environ['TWILIO_NUMBER'],
                      to='+17192142929'
                  )
